@@ -1,0 +1,177 @@
+$map-justify-content: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  around: space-around,
+  between: space-between,
+  evenly: space-evenly,
+);
+
+@each $key, $value in $map-justify-content {
+  .justify-content-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-justify-content {
+    .justify-content-lg-#{$key} {
+      justify-content: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-justify-content {
+    .justify-content-md-#{$key} {
+      justify-content: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-justify-content {
+    .justify-content-sm-#{$key} {
+      justify-content: $value;
+    }
+  }
+}
+
+$map-align-items: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+@each $key, $value in $map-align-items {
+  .align-items-#{$key} {
+    align-items: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-align-items {
+    .align-items-lg-#{$key} {
+      align-items: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-align-items {
+    .align-items-md-#{$key} {
+      align-items: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-align-items {
+    .align-items-sm-#{$key} {
+      align-items: $value;
+    }
+  }
+}
+
+$map-flex-direction: (
+  row: row,
+  column: column,
+  row-reverse: row-reverse,
+  column-reverse: column-reverse,
+);
+
+@each $key, $value in $map-flex-direction {
+  .flex-#{$key} {
+    flex-direction: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-flex-direction {
+    .flex-lg-#{$key} {
+      flex-direction: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-flex-direction {
+    .flex-md-#{$key} {
+      flex-direction: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-flex-direction {
+    .flex-sm-#{$key} {
+      flex-direction: $value;
+    }
+  }
+}
+
+$map-flex-wrap: (
+  nowrap: nowrap,
+  wrap: wrap,
+  wrap-reverse: wrap-reverse,
+);
+
+@each $key, $value in $map-flex-wrap {
+  .flex-#{$key} {
+    flex-wrap: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-flex-wrap {
+    .flex-lg-#{$key} {
+      flex-wrap: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-flex-wrap {
+    .flex-md-#{$key} {
+      flex-wrap: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-flex-wrap {
+    .flex-sm-#{$key} {
+      flex-wrap: $value;
+    }
+  }
+}
+
+$map-align-self: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+@each $key, $value in $map-align-self {
+  .align-self-#{$key} {
+    align-self: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-align-self {
+    .align-self-lg-#{$key} {
+      align-self: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-align-self {
+    .align-self-md-#{$key} {
+      align-self: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-align-self {
+    .align-self-sm-#{$key} {
+      align-self: $value;
+    }
+  }
+}

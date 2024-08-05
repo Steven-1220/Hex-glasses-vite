@@ -1,0 +1,38 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin pad-md {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mobile-sm {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin selectTagDownArrow($color) {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 5px 0 5px;
+  border-color: $dark transparent transparent transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  pointer-events: none;
+}

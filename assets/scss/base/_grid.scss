@@ -1,0 +1,78 @@
+// grid system 設定
+$gap: 24px;
+$column-num: 12;
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: calc($gap/2);
+  padding-right: calc($gap/2);
+  @include pad {
+    max-width: 720px;
+  }
+  @include mobile {
+    max-width: 372px;
+  }
+}
+
+@include pad {
+  .container-lg-fluid {
+    max-width: 1320px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@include mobile {
+  .container-sm-fluid {
+    max-width: 1320px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * ($gap/2));
+  margin-right: calc(-1 * ($gap/2));
+}
+
+@for $i from 1 through $column-num {
+  .col-#{$i} {
+    width: 100% * calc($i / $column-num);
+    padding-left: calc($gap/2);
+    padding-right: calc($gap/2);
+  }
+}
+
+@include pad {
+  @for $i from 1 through $column-num {
+    .col-lg-#{$i} {
+      width: 100% * calc($i / $column-num);
+      padding-left: calc($gap/2);
+      padding-right: calc($gap/2);
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 1 through $column-num {
+    .col-md-#{$i} {
+      width: 100% * calc($i / $column-num);
+      padding-left: calc($gap/2);
+      padding-right: calc($gap/2);
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 1 through $column-num {
+    .col-sm-#{$i} {
+      width: 100% * calc($i / $column-num);
+      padding-left: calc($gap/2);
+      padding-right: calc($gap/2);
+    }
+  }
+}

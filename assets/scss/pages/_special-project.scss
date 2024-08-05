@@ -1,0 +1,56 @@
+.nav-special {
+  a {
+    &:hover {
+      color: $warning;
+    }
+    @include mobile-sm {
+      font-size: 12px;
+    }
+  }
+  .search {
+    span {
+      font-size: 30px;
+      cursor: pointer;
+      &:hover {
+        color: $warning;
+      }
+    }
+  }
+}
+
+.special-project {
+  .tags {
+    a {
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  .tags-area {
+    a {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    span {
+      font-size: 48px;
+      @include pad {
+        font-size: 24px;
+      }
+    }
+  }
+  .tags-list {
+    max-width: 260px;
+    @include pad {
+      max-width: 140px;
+    }
+  }
+
+  .social-media {
+    border-bottom: 1px solid $gray-300;
+    a {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

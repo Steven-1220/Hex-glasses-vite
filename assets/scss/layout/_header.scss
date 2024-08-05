@@ -1,0 +1,42 @@
+.header {
+  .container {
+    @include mobile {
+      max-width: 1320px;
+    }
+  }
+  h1 {
+    a {
+      background-image: url('../images/logo-white.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 49px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  .nav {
+    li {
+      @include mobile {
+        border: 1px solid $white;
+      }
+      a {
+        &:hover {
+          color:$dark;
+        }
+      }
+    }
+    li:nth-child(1), li:nth-child(2) {
+      @include mobile {
+        margin-bottom: -1px;
+      }
+    }
+    li:nth-child(odd) {
+      @include mobile {
+        border-right: 0;
+      }
+    }
+  }
+}

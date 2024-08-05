@@ -1,0 +1,45 @@
+.category {
+  width: 33.33%;
+}
+
+.btn-category {
+  border: 1px solid $gray-200;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $primary;
+    }
+  }
+}
+
+.products {
+  h2 {
+    font-size: 42px;
+  }
+  .card {
+    &-info {
+      .color {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

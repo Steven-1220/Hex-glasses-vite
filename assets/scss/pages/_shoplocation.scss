@@ -1,0 +1,46 @@
+.shoplocation {
+  .location-title {
+    border-left: 8px solid $third;
+  }
+
+  .select {
+    &-group {
+      position: relative;
+      &::after {
+        @include selectTagDownArrow($dark);
+      }
+    }
+    &-location {
+      font-size: 18px;
+      padding: 6px 12px;
+      border: 1px solid #ced4da;
+      flex-grow: 1;
+      appearance: none;
+      cursor: pointer;
+    }
+  }
+
+  .shop-list {
+    li {
+      span {
+        &:first-child {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .card-title {
+    border: 1px solid #00000020;
+  }
+
+  .card-info {
+    border: 1px solid #00000020;
+  }
+
+  .btn-location {
+    &:hover {
+      background: $primary;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// banner 區塊
+.main-banner {
+  height: calc(100vh - 94px);
+  background-size: cover;
+  background-image: url(../images/home-header.png);
+  background-position: 0% 0%;
+  @include pad {
+    background-image: url(../images/home-header-sm.png);
+  }
+}
+
+.btn-main-banner {
+  padding: 6px 12px;
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+// classical 區塊
+.classical {
+  .card {
+    @include pad {
+      max-width: 336px;
+    }
+    @include mobile {
+      max-width: 348px;
+    }
+  }
+}
+
+// co-branding 區塊
+.co-branding {
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-position: 0% 0%;
+  @include pad {
+    background-image: url('../images/index-bg-md.png');
+  }
+  @include mobile {
+    background-image: url('../images/index-bg-sm.png');
+  }
+}
+
+// customer-recommend 區塊
+.customer-recommend {
+  .card {
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+  }
+  .card-body {
+    flex-grow: 1;
+  }
+}
+
+// contact 區塊
+.contact {
+  .form {
+    &-group {
+      input {
+        padding: 6px 12px;
+        border: 1px solid $dark;
+        background: transparent;
+      }
+      textarea {
+        padding: 6px 12px;
+        border: 1px solid $dark;
+        background: transparent;
+      }
+    }
+    &-check {
+      input {
+        @include mobile {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.btn-contact {
+  width: 66.67%;
+  cursor: pointer;
+  border: none;
+  @include mobile {
+    width: 100%;
+  }
+  &:hover {
+    background: $secondary;
+  }
+}

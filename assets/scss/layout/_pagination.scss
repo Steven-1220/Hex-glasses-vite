@@ -1,0 +1,45 @@
+.pagination-list {
+  .prev {
+    a {
+      font-size: 18px;
+      border: 1px solid $gray-400;
+      @include mobile {
+        font-size: 12px;
+        padding: 10px 16px;
+      }
+    }
+  }
+  .next {
+    a {
+      font-size: 18px;
+      border: 1px solid $gray-400;
+      @include mobile {
+        font-size: 12px;
+        padding: 10px 16px;
+      }
+    }
+  }
+  .page {
+    a {
+      font-size: 18px;
+      border: 1px solid $gray-400;
+      @include mobile {
+        font-size: 12px;
+        padding: 10px 12px;
+      }
+    }
+  }
+  li + li {
+    margin-left: -1px;
+  }
+  a {
+    &.active {
+      background: $dark;
+      color: $white;
+    }
+    &:hover {
+      background: $dark;
+      color: $white;
+    }
+  }
+}

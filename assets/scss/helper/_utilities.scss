@@ -1,0 +1,154 @@
+// 文字顏色
+.text-primary {
+  color: $primary;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-dark-light {
+  color: $dark-light;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-gray {
+  color: $gray-200;
+}
+
+.text-gray-400 {
+  color: $gray-400;
+}
+
+// 字體樣式
+.text-italic {
+  font-style: italic;
+}
+
+// 背景顏色
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-pink {
+  background-color: $lightpink;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+
+.bg-warning {
+  background-color: $warning;
+}
+
+.bg-info {
+  background-color: $info;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+// 字體粗細
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+// 文字對齊
+
+$map-text-center: (
+  left: left,
+  center: center,
+  right: right,
+);
+
+@each $key, $value in $map-text-center {
+  .text-#{$key} {
+    text-align: $value;
+  }
+}
+
+@include pad {
+  @each $key, $value in $map-text-center {
+    .text-lg-#{$key} {
+      text-align: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-text-center {
+    .text-md-#{$key} {
+      text-align: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-text-center {
+    .text-sm-#{$key} {
+      text-align: $value;
+    }
+  }
+}
+
+$map-font-size: (
+  1: 0.875 * $font-size-base, // 14px
+  2: $font-size-base, // 16px
+  3: 1.25 * $font-size-base, // 20px
+  4: 1.5 * $font-size-base,  // 24px
+  5: 2 * $font-size-base,  // 32px
+  6: 2.25 * $font-size-base, // 36px
+  7: 3 * $font-size-base, // 48px
+  8: 4 * $font-size-base, // 64px
+  9: 5.25 * $font-size-base // 84px
+);
+
+@each $key, $value in $map-font-size {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+@include pad {
+  @each $key, $value in $map-font-size {
+    .fs-lg-#{$key} {
+      font-size: $value;
+    }
+  }
+}
+@include pad-md {
+  @each $key, $value in $map-font-size {
+    .fs-md-#{$key} {
+      font-size: $value;
+    }
+  }
+}
+@include mobile {
+  @each $key, $value in $map-font-size {
+    .fs-sm-#{$key} {
+      font-size: $value;
+    }
+  }
+}
+
+.object-cover {
+  object-fit: cover;
+}

@@ -1,0 +1,523 @@
+$max-times: 40;
+
+// 上下左右 padding
+@for $i from 0 through $max-times {
+  .p-#{$i} {
+    padding: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .p-lg-#{$i} {
+      padding: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .p-md-#{$i} {
+      padding: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .p-sm-#{$i} {
+      padding: $i * $spacing;
+    }
+  }
+}
+
+// 上下 padding
+@for $i from 0 through $max-times {
+  .py-#{$i} {
+    padding-top: $i * $spacing;
+    padding-bottom: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .py-lg-#{$i} {
+      padding-top: $i * $spacing;
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .py-md-#{$i} {
+      padding-top: $i * $spacing;
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .py-sm-#{$i} {
+      padding-top: $i * $spacing;
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+// 左右 padding
+@for $i from 0 through $max-times {
+  .px-#{$i} {
+    padding-left: $i * $spacing;
+    padding-right: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .px-lg-#{$i} {
+      padding-left: $i * $spacing;
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .px-md-#{$i} {
+      padding-left: $i * $spacing;
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .px-sm-#{$i} {
+      padding-left: $i * $spacing;
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+// 上 padding
+@for $i from 0 through $max-times {
+  .pt-#{$i} {
+    padding-top: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .pt-lg-#{$i} {
+      padding-top: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .pt-md-#{$i} {
+      padding-top: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .pt-sm-#{$i} {
+      padding-top: $i * $spacing;
+    }
+  }
+}
+
+// 下 padding
+@for $i from 0 through $max-times {
+  .pb-#{$i} {
+    padding-bottom: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .pb-lg-#{$i} {
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .pb-md-#{$i} {
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .pb-sm-#{$i} {
+      padding-bottom: $i * $spacing;
+    }
+  }
+}
+
+// 左 padding
+@for $i from 0 through $max-times {
+  .pl-#{$i} {
+    padding-left: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .pl-lg-#{$i} {
+      padding-left: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .pl-md-#{$i} {
+      padding-left: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .pl-sm-#{$i} {
+      padding-left: $i * $spacing;
+    }
+  }
+}
+
+// 右 padding
+@for $i from 0 through $max-times {
+  .pr-#{$i} {
+    padding-right: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .pr-lg-#{$i} {
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .pr-md-#{$i} {
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .pr-sm-#{$i} {
+      padding-right: $i * $spacing;
+    }
+  }
+}
+
+// 上下左右 margin
+@for $i from 0 through $max-times {
+  .m-#{$i} {
+    margin: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .m-lg-#{$i} {
+      margin: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .m-md-#{$i} {
+      margin: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .m-sm-#{$i} {
+      margin: $i * $spacing;
+    }
+  }
+}
+
+// 上下 margin
+@for $i from 0 through $max-times {
+  .my-#{$i} {
+    margin-top: $i * $spacing;
+    margin-bottom: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .my-lg-#{$i} {
+      margin-top: $i * $spacing;
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .my-md-#{$i} {
+      margin-top: $i * $spacing;
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .my-sm-#{$i} {
+      margin-top: $i * $spacing;
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+// 左右 margin
+@for $i from 0 through $max-times {
+  .mx-#{$i} {
+    margin-left: $i * $spacing;
+    margin-right: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .mx-lg-#{$i} {
+      margin-left: $i * $spacing;
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .mx-md-#{$i} {
+      margin-left: $i * $spacing;
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .mx-sm-#{$i} {
+      margin-left: $i * $spacing;
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+// 上 margin
+@for $i from 0 through $max-times {
+  .mt-#{$i} {
+    margin-top: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .mt-lg-#{$i} {
+      margin-top: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .mt-md-#{$i} {
+      margin-top: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .mt-sm-#{$i} {
+      margin-top: $i * $spacing;
+    }
+  }
+}
+
+// 下 margin
+@for $i from 0 through $max-times {
+  .mb-#{$i} {
+    margin-bottom: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .mb-lg-#{$i} {
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .mb-md-#{$i} {
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .mb-sm-#{$i} {
+      margin-bottom: $i * $spacing;
+    }
+  }
+}
+
+// 左 margin
+@for $i from 0 through $max-times {
+  .ml-#{$i} {
+    margin-left: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .ml-lg-#{$i} {
+      margin-left: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .ml-md-#{$i} {
+      margin-left: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .ml-sm-#{$i} {
+      margin-left: $i * $spacing;
+    }
+  }
+}
+
+// 右 margin
+@for $i from 0 through $max-times {
+  .mr-#{$i} {
+    margin-right: $i * $spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max-times {
+    .mr-lg-#{$i} {
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+@include pad-md {
+  @for $i from 0 through $max-times {
+    .mr-md-#{$i} {
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max-times {
+    .mr-sm-#{$i} {
+      margin-right: $i * $spacing;
+    }
+  }
+}
+
+
+// margin auto
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+@include pad {
+  .mt-lg-auto {
+    margin-top: auto;
+  }
+  
+  .mb-lg-auto {
+    margin-bottom: auto;
+  }
+  
+  .ml-lg-auto {
+    margin-left: auto;
+  }
+  
+  .mr-lg-auto {
+    margin-right: auto;
+  }
+}
+
+@include pad-md {
+  .mt-md-auto {
+    margin-top: auto;
+  }
+  
+  .mb-md-auto {
+    margin-bottom: auto;
+  }
+  
+  .ml-md-auto {
+    margin-left: auto;
+  }
+  
+  .mr-md-auto {
+    margin-right: auto;
+  }
+}
+
+@include mobile {
+  .mt-sm-auto {
+    margin-top: auto;
+  }
+  
+  .mb-sm-auto {
+    margin-bottom: auto;
+  }
+  
+  .ml-sm-auto {
+    margin-left: auto;
+  }
+  
+  .mr-sm-auto {
+    margin-right: auto;
+  }
+}

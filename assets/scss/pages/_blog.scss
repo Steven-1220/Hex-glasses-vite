@@ -1,0 +1,22 @@
+.nav-special {
+  a {
+    &:hover {
+      color: $warning;
+    }
+  }
+  .search {
+    span {
+      font-size: 30px;
+      cursor: pointer;
+      &:hover {
+        color: $warning;
+      }
+    }
+  }
+}
+
+.blog {
+  .blog-title {
+    border-left: 8px solid $third;
+  }
+}
