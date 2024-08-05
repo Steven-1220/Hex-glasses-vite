@@ -19,4 +19,9 @@
   .blog-title {
     border-left: 8px solid $third;
   }
+  a {
+    &:hover {
+      color: $warning;
+    }
+  }
 }
