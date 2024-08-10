@@ -32,7 +32,7 @@
 .co-branding {
   background-image: url(../images/index-bg.png);
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: center;
   @include pad {
     background-image: url('../images/index-bg-md.png');
   }

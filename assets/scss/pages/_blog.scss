@@ -19,9 +19,11 @@
   .blog-title {
     border-left: 8px solid $third;
   }
-  a {
-    &:hover {
-      color: $warning;
+  .card-info {
+    a {
+      &:hover {
+        color: $warning;
+      }
     }
   }
 }

@@ -21,7 +21,7 @@ $map-display: (
 }
 @include pad-md {
   @each $key,$value in $map-display {
-    .d-md--#{$key} {
+    .d-md-#{$key} {
       display: $value;
     }
   }
